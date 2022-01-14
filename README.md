@@ -1,4 +1,4 @@
-          # Hi there 👋
+# Hi there 👋
 
 ## Catch me at [jerryz.com.cn](https://jerryz.com.cn) and [blog.jerryz.com.cn](https://blog.jerryz.com.cn)! 😉
 
