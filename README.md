@@ -2,7 +2,7 @@
 
 ## Catch me at [jerryz.com.cn](https://jerryz.com.cn) and [blog.jerryz.com.cn](https://blog.jerryz.com.cn)! 😉
 
-![欢迎](https://cards.jerryz.com.cn/api?site=jerryz.com.cn&wechat=ilovegithub&qq=2098412009&github=YangguangZhou&bilibili=489004177&luogu=253620&twitter=%40JerryZhouYG&date=2022-06-30&str=小三科中考&quote=永远相信美好的事情即将发生✨&bg=255%2C255%2C255%2C0)
+![欢迎](https://card.jerryz.com.cn/)
 
 ![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
 
