@@ -2,6 +2,8 @@
 
 ## Catch me at [jerryz.com.cn](https://jerryz.com.cn) and [blog.jerryz.com.cn](https://blog.jerryz.com.cn)! 😉
 
+![欢迎](https://card.jerryz.com.cn)
+
 ![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
 
 ![我最常用的语言](https://github-readme-stats.vercel.app/api/top-langs/?username=YangguangZhou&layout=compact)
