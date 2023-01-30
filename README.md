@@ -8,6 +8,8 @@
 
 ![我最常用的语言](https://github-readme-stats.vercel.app/api/top-langs/?username=YangguangZhou&layout=compact)
 
+![Trophy](https://github-profile-trophy.vercel.app/?username=YangguangZhou)
+
 <!--
 **YangguangZhou/YangguangZhou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
