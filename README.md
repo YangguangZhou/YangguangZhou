@@ -4,9 +4,21 @@
 
 ![欢迎](https://card.jerryz.com.cn/white)
 
-![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
+![classic](metrics.classic.svg)
 
-![我最常用的语言](https://github-readme-stats.vercel.app/api/top-langs/?username=YangguangZhou&layout=compact)
+![achievements](metrics.plugin.achievements.svg)
+
+![language](metrics.plugin.languages.details.svg)
+
+[![rss](metrics.plugin.rss.svg)](https://blog.jerryz.com.cn)
+
+![stargazers](metrics.plugin.stargazers.svg)
+
+![skyline](metrics.plugin.skyline.svg)
+
+![isocalendar](metrics.plugin.isocalendar.fullyear.svg)
+
+![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=YangguangZhou)
 
