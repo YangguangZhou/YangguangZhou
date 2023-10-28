@@ -34,7 +34,7 @@ jobs:
           token: NOT_NEEDED
           base: ""
           plugin_skyline: yes
-      - name: Compact display
+      - name: Achievement display
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.achievements.svg
@@ -44,8 +44,6 @@ jobs:
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
             scripter, packager, explorer, infographile, manager
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: X
       - name: Most used (with details)
         uses: lowlighter/metrics@latest
         with:
