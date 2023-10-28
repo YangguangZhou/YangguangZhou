@@ -19,7 +19,7 @@ jobs:
           base: ""
           plugin_rss: yes
           plugin_rss_source: https://blog.jerryz.com.cn/atom.xml
-          plugin_rss_limit: 5
+          plugin_rss_limit: 4
       - name: classic
         uses: lowlighter/metrics@latest
         with:
@@ -34,17 +34,20 @@ jobs:
           token: NOT_NEEDED
           base: ""
           plugin_skyline: yes
-          plugin_skyline_year: 2023
           plugin_skyline_frames: 6
           plugin_skyline_quality: 1
-      - name: Detailed display
+      - name: Compact display
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_achievements: yes
-          plugin_achievements_only: sponsor, maintainer, octonaut
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
       - name: Most used (with details)
         uses: lowlighter/metrics@latest
         with:
@@ -62,19 +65,11 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-      - name: Using classic charts
+      - name: Using graph charts
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.stargazers.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stargazers: yes
-      - name: Icons
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.topics.icons.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
+          plugin_stargazers_charts_type: graph
