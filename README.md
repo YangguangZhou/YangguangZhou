@@ -4,19 +4,19 @@
 
 ![欢迎](https://card.jerryz.com.cn/white)
 
-![classic](metrics.classic.svg)
+![classic](https://gh.jerryz.com.cn/)
 
-![achievements](metrics.plugin.achievements.svg)
+![achievements](https://gh.jerryz.com.cn/achievements)
 
-![language](metrics.plugin.languages.details.svg)
+![language](https://gh.jerryz.com.cn/languages)
 
-[![rss](metrics.plugin.rss.svg)](https://blog.jerryz.com.cn)
+[![rss](https://gh.jerryz.com.cn/rss)](https://blog.jerryz.com.cn)
 
-![stargazers](metrics.plugin.stargazers.svg)
+![stargazers](https://gh.jerryz.com.cn/stargazers)
 
-![skyline](metrics.plugin.skyline.svg)
+![skyline](https://gh.jerryz.com.cn/skyline)
 
-![isocalendar](metrics.plugin.isocalendar.fullyear.svg)
+![calendar](https://gh.jerryz.com.cn/calendar)
 
 ![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
 

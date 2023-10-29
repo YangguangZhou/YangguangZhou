@@ -1,0 +1,32 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "metrics.classic.svg"
+        },
+        {
+            "source": "/achievements",
+            "destination": "metrics.plugin.achievements.svg"
+        },
+        {
+            "source": "/calendar",
+            "destination": "metrics.plugin.isocalendar.fullyear.svg"
+        },
+        {
+            "source": "/languages",
+            "destination": "metrics.plugin.languages.details.svg"
+        },
+        {
+            "source": "/rss",
+            "destination": "metrics.plugin.rss.svg"
+        },
+        {
+            "source": "/skyline",
+            "destination": "metrics.plugin.skyline.svg"
+        },
+        {
+            "source": "/stargazers",
+            "destination": "metrics.plugin.stargazers.svg"
+        }
+    ]
+}
