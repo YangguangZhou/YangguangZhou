@@ -8,10 +8,10 @@ on:
   push: {branches: ["master", "main"]}
 
 jobs:
-  metrics-card:
+  metrics-rss:
     runs-on: ubuntu-latest
     steps:
-      - name: News from hackernews
+      - name: RSS
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.rss.svg
@@ -20,14 +20,20 @@ jobs:
           plugin_rss: yes
           plugin_rss_source: https://blog.jerryz.com.cn/atom.xml
           plugin_rss_limit: 4
-      - name: classic
+  metrics-classic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Classic
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
-      - name: Achievement display
+  metrics-achievement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Achievement
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.achievements.svg
@@ -37,7 +43,10 @@ jobs:
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
             scripter, packager, explorer, infographile, manager
-      - name: Most used (with details)
+  metrics-languages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Languages
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.languages.details.svg
@@ -46,7 +55,10 @@ jobs:
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 12
-      - name: Full-year calendar
+  metrics-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Calendar
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.fullyear.svg
@@ -54,13 +66,19 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-      - name: Using classic charts
+  metrics-stargazers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stargazers
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.stargazers.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stargazers: yes
+  metrics-city:
+    runs-on: ubuntu-latest
+    steps:
       - name: GitHub City
         uses: lowlighter/metrics@latest
         with:
