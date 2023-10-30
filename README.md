@@ -14,8 +14,6 @@
 
 ![stargazers](https://gh.jerryz.com.cn/stargazers)
 
-![skyline](https://gh.jerryz.com.cn/skyline)
-
 ![calendar](https://gh.jerryz.com.cn/calendar)
 
 ![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
