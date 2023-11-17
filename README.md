@@ -16,6 +16,8 @@
 
 ![calendar](https://gh.jerryz.com.cn/calendar)
 
+![history](https://gh.jerryz.com.cn/history)
+
 ![我的信息](https://github-readme-stats.vercel.app/api?username=YangguangZhou&show_icons=true&include_all_commits=true)
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=YangguangZhou)
