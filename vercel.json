@@ -31,6 +31,10 @@
         {
             "source": "/history",
             "destination": "metrics.plugin.calendar.full.svg"
+        },
+        {
+            "source": "/pagespeed",
+            "destination": "metrics.plugin.pagespeed.screenshot.svg"
         }
     ]
 }
