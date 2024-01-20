@@ -87,3 +87,16 @@ jobs:
           base: ""
           plugin_calendar: yes
           plugin_calendar_limit: 0
+  metrics-pagespeed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pagespeed
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.pagespeed.screenshot.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://jerryz.com.cn/
