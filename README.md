@@ -4,7 +4,7 @@
 
 ![欢迎](https://card.jerryz.com.cn/white)
 
-![classic](https://gh.jerryz.com.cn/)
+![classic](https://gh.jerryz.com.cn/classic)
 
 ![achievements](https://gh.jerryz.com.cn/achievements)
 
