@@ -33,16 +33,6 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 设置 Node.js 环境
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: 安装依赖并构建项目
-        run: |
-          npm install
-          npm run build
-
       - name: 将 /dist 内容复制到仓库根目录
         run: |
           cp -r dist/* .
