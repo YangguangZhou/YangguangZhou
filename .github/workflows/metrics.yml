@@ -1,0 +1,101 @@
+name: Metrics
+
+on:
+  # Schedule updates (each day at 0:00 in Beijing time)
+  schedule: [{cron: "0 0,12 * * *"}]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  # push: {branches: ["master", "main"]}
+
+jobs:
+  metrics-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: RSS
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.rss.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_rss: yes
+          plugin_rss_source: https://blog.jerryz.com.cn/atom.xml
+          plugin_rss_limit: 4
+  metrics-classic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Classic
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.classic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
+          plugin_lines: yes
+  metrics-achievement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Achievement
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+  metrics-languages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.details.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 12
+  metrics-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+  metrics-stargazers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stargazers
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stargazers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+  metrics-history:
+    runs-on: ubuntu-latest
+    steps:
+      - name: History
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.calendar.full.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
+  metrics-pagespeed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pagespeed
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.pagespeed.screenshot.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://jerryz.com.cn/
