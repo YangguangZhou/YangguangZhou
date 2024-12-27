@@ -30,13 +30,13 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: 检出代码
-        uses: actions/checkout@v4
-
       - name: 列出构建输出
         run: |
           ls -al
           ls -al dist
+
+      - name: 检出代码
+        uses: actions/checkout@v4
 
       - name: 将 /dist 内容复制到仓库根目录
         run: |
