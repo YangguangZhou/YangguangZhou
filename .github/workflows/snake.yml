@@ -30,27 +30,24 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: 列出构建输出
-        run: |
-          ls -al
-          ls -al dist
+      - name: 检查生成的文件
+        run: ls -al dist
 
-      - name: 检出代码
+      - name: 检出代码到子目录
         uses: actions/checkout@v4
+        with:
+          path: repo
 
-      - name: 将 /dist 内容复制到仓库根目录
-        run: |
-          cp -r dist/* .
+      - name: 复制生成的文件到仓库根目录
+        run: cp dist/* repo/
 
-      - name: 配置 Git 用户信息
-        run: |
-          git config --global user.name 'YangguangZhou'
-          git config --global user.email '2098412009@qq.com'
-
-      - name: 提交更改并推送到 main 分支
+      - name: 推送更改到主分支
+        working-directory: repo
         env:
           METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: |
+          git config --global user.name 'YangguangZhou'
+          git config --global user.email '2098412009@qq.com'
           git add .
-          git commit -m 'Deploy: 更新 /dist 内容到根目录'
+          git commit -m 'Add generated Snake files'
           git push https://x-access-token:${METRICS_TOKEN}@github.com/${{ github.repository }} HEAD:main
