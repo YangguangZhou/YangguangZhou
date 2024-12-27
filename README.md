@@ -15,9 +15,9 @@
 ![stargazers](https://gh.jerryz.com.cn/stargazers)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YangguangZhou/YangguangZhou/output/dist/github-snake-dark.svg?palette=github-dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YangguangZhou/YangguangZhou/output/dist/github-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/YangguangZhou/YangguangZhou/output/dist/github-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://gh.jerryz.com.cn/snake-dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://gh.jerryz.com.cn/snake" />
+    <img alt="github-snake" src="https://gh.jerryz.com.cn/snake" />
 </picture>
 
 ![calendar](https://gh.jerryz.com.cn/calendar)

@@ -35,6 +35,14 @@
         {
             "source": "/pagespeed",
             "destination": "metrics.plugin.pagespeed.screenshot.svg"
+        },
+        {
+            "source": "/snake",
+            "destination": "github-contribution-grid-snake.svg"
+        },
+        {
+            "source": "/snake-dark",
+            "destination": "github-contribution-grid-snake-dark.svg"
         }
     ]
 }
