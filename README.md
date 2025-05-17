@@ -14,12 +14,6 @@
 
 ![stargazers](https://gh.jerryz.com.cn/stargazers)
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://gh.jerryz.com.cn/snake-dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://gh.jerryz.com.cn/snake" />
-    <img alt="github-snake" src="https://gh.jerryz.com.cn/snake" />
-</picture>
-
 ![calendar](https://gh.jerryz.com.cn/calendar)
 
 ![history](https://gh.jerryz.com.cn/history)
