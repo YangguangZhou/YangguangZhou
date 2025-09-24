@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Achievement
-        uses: lowlighter/metrics@latest
+        uses: stalomeow/metrics@projects-v2
         with:
           filename: metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
